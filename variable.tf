@@ -30,3 +30,13 @@ variable "ap_availability_zone" {
   type        = list(string)
   description = "Availability Zones"
 }
+
+variable "ec2_ami_id" {
+  type        = string
+  description = "AMI id for EC2 instances"
+}
+
+variable "public_key" {
+  type        = string
+  description = "Public SSH key for EC2 key pair"
+}
